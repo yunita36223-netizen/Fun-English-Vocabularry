@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun English Vocabulary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .speech-actions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:16px 0; }
+    .speech-heard { text-align:center; font-style:italic; margin:8px 0; }
+    #speech-record.is-recording { animation: speech-pulse 1s infinite; background:#e53935; border-color:#e53935; color:#fff; }
+    @keyframes speech-pulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.05); } }
+    #speech-feedback.is-correct { color:#2e7d32; }
+    #speech-feedback.is-wrong { color:#c62828; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" data-target="home">Fun English Vocabulary</a>
+    <nav aria-label="Navigasi utama">
+      <ul class="nav-list">
+        <li><button class="nav-btn is-active" data-target="home">Home</button></li>
+        <li><button class="nav-btn" data-target="tujuan">Tujuan</button></li>
+        <li><button class="nav-btn" data-target="vocabulary">Vocabulary</button></li>
+        <li><button class="nav-btn" data-target="practice">Practice</button></li>
+        <li><button class="nav-btn" data-target="game">Game</button></li>
+        <li><button class="nav-btn" data-target="quiz">Quiz</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="page is-visible">
+      <div class="hero">
+        <article class="hero-text">
+          <h1>Let's Learn <br>English!</h1>
+          <h2 class="subtitle">Daily Activities Vocabulary</h2>
+          <p>Learn new words, practice, play games, and test your knowledge!</p>
+          <button class="btn btn-primary" data-target="vocabulary">Start Learning</button>
+        </article>
+        <figure class="hero-illustration">
+          <div class="big-emoji" aria-hidden="true">🧒📚🪥</div>
+          <div class="dots" aria-hidden="true">
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="dot dot-orange"></span>
+          </div>
+          <figcaption>Ilustrasi anak melakukan aktivitas sehari-hari</figcaption>
+        </figure>
+      </div>
+
+      <article class="group-box">
+        <p class="group-name">Kelompok 1</p>
+        <p class="group-info">
+          Prodi Teknologi Pendidikan<br>
+          Fakultas Keguruan dan Ilmu Pendidikan<br>
+          Universitas Muhammadiyah Sidenreng Rappang
+        </p>
+      </article>
+    </section>
+
+    <!-- TUJUAN -->
+    <section id="tujuan" class="page">
+      <h2 class="page-title">Tujuan Pembelajaran</h2>
+      <p class="page-info">Setelah belajar dengan media ini, kamu diharapkan dapat:</p>
+      <ol class="goal-list">
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">📝</span>
+          <span class="goal-text">Mengenal dan menyebutkan kosakata bahasa Inggris tentang aktivitas sehari-hari, seperti wake up, brush teeth, dan go to school.</span>
+        </li>
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">🔊</span>
+          <span class="goal-text">Melafalkan kosakata bahasa Inggris dengan benar dengan bantuan fitur Listen.</span>
+        </li>
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">🔄</span>
+          <span class="goal-text">Memahami arti kosakata dari bahasa Inggris ke bahasa Indonesia dan sebaliknya.</span>
+        </li>
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">🖼️</span>
+          <span class="goal-text">Mencocokkan gambar atau situasi dengan aktivitas yang tepat dalam bahasa Inggris.</span>
+        </li>
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">🎮</span>
+          <span class="goal-text">Menggunakan kosakata yang telah dipelajari dalam latihan, permainan, dan kuis dengan percaya diri.</span>
+        </li>
+        <li class="goal-item">
+          <span class="goal-icon" aria-hidden="true">🌟</span>
+          <span class="goal-text">Tumbuh minat dan semangat untuk terus belajar bahasa Inggris dengan cara yang menyenangkan.</span>
+        </li>
+      </ol>
+      <div class="goal-cta">
+        <button class="btn btn-primary" data-target="vocabulary">Mulai Belajar Kosakata</button>
+      </div>
+    </section>
+
+    <!-- VOCABULARY (MATERI) -->
+    <section id="vocabulary" class="page">
+      <h2 class="page-title">Daily Activities Vocabulary</h2>
+
+      <!-- Video materi -->
+      <div class="video-box" style="max-width:720px;margin:0 auto 24px;text-align:center;">
+        <h3 class="video-title" style="margin:0 0 12px;">🎬 Video Materi</h3>
+        <div class="video-wrap" style="position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.15);">
+          <iframe
+            src="https://www.youtube.com/embed/foLjjIIbzgE"
+            title="Video materi Daily Activities Vocabulary"
+            style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+        <p style="margin:8px 0 0;font-size:.9rem;">
+          Video tidak muncul? <a href="https://youtu.be/foLjjIIbzgE" target="_blank" rel="noopener">Buka di YouTube</a>
+        </p>
+      </div>
+
+      <p class="page-info" id="vocab-info">Page 1 of 2</p>
+      <div class="card-grid" id="vocab-grid"></div>
+      <div class="pager">
+        <button class="btn btn-outline" id="vocab-back">Back</button>
+        <button class="btn btn-primary" id="vocab-next">Next</button>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section id="practice" class="page">
+      <article class="quiz-box">
+        <div class="progress-wrap">
+          <span class="progress-text" id="speech-count">Question 1/4</span>
+          <div class="progress"><div class="progress-bar" id="speech-bar"></div></div>
+        </div>
+        <h2 class="quiz-title">Let's Practice!</h2>
+        <p class="page-info">Klik <strong>Listen</strong> untuk mendengar, lalu klik <strong>Record</strong> dan ucapkan kata di bawah ini.</p>
+
+        <div id="speech-play">
+          <div class="question-card" style="text-align:center;">
+            <div class="img-small" id="speech-icon" style="font-size:3rem;" aria-hidden="true"></div>
+            <p class="question-text" id="speech-word" style="font-size:1.8rem;font-weight:800;margin:8px 0 0;"></p>
+            <p id="speech-meaning" style="margin:4px 0 0;"></p>
+          </div>
+
+          <div class="speech-actions">
+            <button class="btn btn-outline" id="speech-listen" type="button">🔊 Listen</button>
+            <button class="btn btn-primary" id="speech-record" type="button">🎤 Record</button>
+          </div>
+
+          <p class="speech-heard" id="speech-heard" role="status" hidden></p>
+          <p class="feedback" id="speech-feedback" role="status" hidden></p>
+          <p class="feedback wrong" id="speech-unsupported" role="alert" hidden>
+            Browser ini belum mendukung pengenalan suara. Gunakan Google Chrome atau Microsoft Edge, dan buka lewat HTTPS atau localhost.
+          </p>
+          <button class="btn btn-primary btn-next" id="speech-next" type="button" hidden>Next</button>
+        </div>
+
+        <div id="speech-summary" style="text-align:center;" hidden>
+          <h3>Practice Completed! 🎉</h3>
+          <p>Pengucapan benar: <strong id="speech-score-text">0 / 4</strong></p>
+          <div class="pager">
+            <button class="btn btn-outline" id="speech-restart" type="button">Try Again</button>
+            <button class="btn btn-primary" data-target="game" type="button">Go to Game</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Elemen lama (disembunyikan) agar script.js lama tidak error -->
+      <div hidden aria-hidden="true">
+        <span id="practice-count"></span>
+        <div id="practice-bar"></div>
+        <div id="practice-media"></div>
+        <p id="practice-question"></p>
+        <div id="practice-options"></div>
+        <p id="practice-feedback" hidden></p>
+        <button id="practice-next" hidden>Next</button>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section id="game" class="page">
+      <article class="quiz-box">
+        <h2 class="quiz-title">Match the Words!</h2>
+        <p class="page-info">Klik kata Inggris, lalu klik artinya dalam bahasa Indonesia.</p>
+        <div class="match-board">
+          <ul class="match-col" id="game-en"></ul>
+          <ul class="match-col" id="game-id"></ul>
+        </div>
+        <p class="feedback" id="game-feedback" role="status" hidden></p>
+        <button class="btn btn-outline btn-next" id="game-restart">Play Again</button>
+      </article>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="page">
+      <article class="quiz-box">
+        <div class="progress-wrap">
+          <span class="progress-text" id="quiz-count">Question 1/5</span>
+          <div class="progress"><div class="progress-bar" id="quiz-bar"></div></div>
+        </div>
+        <h2 class="quiz-title quiz-title-big">Final Quiz</h2>
+        <p class="page-info">Choose the correct answer. Let's see how much you have learned!</p>
+        <div class="question-card">
+          <p class="question-text" id="quiz-question"></p>
+        </div>
+        <div class="options" id="quiz-options"></div>
+      </article>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result" class="page">
+      <article class="result-box">
+        <div class="score-circle" id="result-score">0</div>
+        <h2 class="quiz-title quiz-title-big">Quiz Completed!</h2>
+        <p class="score-line">Your Score: <strong id="result-score-text">0</strong></p>
+        <p>Great job! You have learned many new English words.</p>
+        <p>Keep practicing your English!</p>
+        <div class="pager">
+          <button class="btn btn-outline" data-target="vocabulary">Review Material</button>
+          <button class="btn btn-primary" data-target="home">Back to Home</button>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Universitas Muhammadiyah Sidenreng Rappang</p>
+    <p>Fakultas Keguruan dan Ilmu Pendidikan</p>
+    <p>Program Studi Teknologi Pendidikan</p>
+    <p>Kelompok 1: Yunita, Iis Paramita</p>
+    <p>Tahun 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="practice-speech.js"></script>
+</body>
+</html>
